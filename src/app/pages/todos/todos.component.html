@@ -1,0 +1,10 @@
+<ul class="list-unstyled">
+  <li *ngFor="let todo of todos">
+    <clr-checkbox
+      name="{{todo.id}}"
+      id="{{todo.id}}"
+      [(ngModel)]="todo.completed">
+      {{todo.title}}
+    </clr-checkbox>
+  </li>
+</ul>
